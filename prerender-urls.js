@@ -8,19 +8,15 @@ module.exports = () => {
 	const pages = [
 		{
 			url: '/',
-			seo: {
-				cover: '/assets/profile.jpg'
-			}
-		},
-		{ url: '/contact/' },
-		{ url: '/contact/success' }
+			data: blogs
+		}
 	];
 
 	// adding blogs list posts page
-	pages.push({
-		url: '/blogs/',
-		data: blogs
-	});
+//	pages.push({
+//		url: '/blogs/',
+//		data: blogs
+//	});
 
 	// adding all blog pages
 	pages.push(...blogs.edges.map(blog => {
